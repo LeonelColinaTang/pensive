@@ -34,7 +34,7 @@ On our application, Pensive, users will be able to access a dictionary API to se
 
 ### Writing Page
 
-![pensive](https://gifyu.com/image/S9PCC)
+[![WritingPageGif.gif](https://s4.gifyu.com/images/WritingPageGif.gif)](https://gifyu.com/image/S9PCC)
 
 The main feature of our application is the Writing Page, the interface through which users can write and format chapters and create, edit or delete characters. The writing page is a very minimalistic environment that improves concentration by removing any unnecessary information or functionality. The Writing Page houses multiple React Components, each one with a unique core functionality. It was a top priority for our team to create the writing page as simple and useful as possible.
 
@@ -110,7 +110,7 @@ const WritingPage = (props) => {
 
 ### Profile Page
 
-PROFILE GIF
+[![profileGif.gif](https://s4.gifyu.com/images/profileGif.gif)](https://gifyu.com/image/S9PFR)
 
 The profile page is the where the user will be directed to after log in or sign up. A button to create a new book will always be in display as well as the books the user has created. Users can create, edit or delete books on this page. Also, by clicking on a book, users will be directed to the chapters index where they can continue writing a specific chapter, create a new one, or delete a chapter. 
 
