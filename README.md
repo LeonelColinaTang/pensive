@@ -172,6 +172,7 @@ class Profile extends React.Component {
   }
 }
 ```
+***
 
 ### Meet the Team
 
