@@ -34,7 +34,7 @@ On our application, Pensive, users will be able to access a dictionary API to se
 
 ### Writing Page
 
-WRITIN GIF HERE
+![pensive](https://gifyu.com/image/S9PCC)
 
 The main feature of our application is the Writing Page, the interface through which users can write and format chapters and create, edit or delete characters. The writing page is a very minimalistic environment that improves concentration by removing any unnecessary information or functionality. The Writing Page houses multiple React Components, each one with a unique core functionality. It was a top priority for our team to create the writing page as simple and useful as possible.
 
