@@ -4,7 +4,6 @@ import { RiDeleteBin5Line } from 'react-icons/ri';
 import { FaEdit } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
-
 class BookBox extends React.Component {
   constructor(props) {
     super(props);
