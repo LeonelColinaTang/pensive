@@ -11,7 +11,6 @@ const WritingPage = (props) => {
     let {chapter, bookId, editChapter} = props;
     const history = useHistory();
 
-
     if (!chapter){
         history.push(`/book/${bookId}`)
     }
@@ -42,38 +41,34 @@ const WritingPage = (props) => {
         quill.root.innerHTML = "";
     }
 
-
     const handleClick = () => {
         if (window.confirm('Are you sure you want to go back? You will lose any unsaved changes')){
             history.push(`/book/${chapter.bookId}`)
         }
     };
 
-
-
     return (
-                <div className="writing-page-main-container">
-                     <div className="left-container-temp">
+            <div className="writing-page-main-container">
+                <div className="left-container-temp">
                     <div id="back-to-profile">
                         <button onClick={handleClick}><BsFillBackspaceFill /></button>
                     </div>
+                 </div>
+                <div className="middle-container-temp">
+                    <div id="writing-piece">
+                        <div ref={quillRef} />
                     </div>
-                    <div className="middle-container-temp">
-                        <div id="writing-piece">
-                            <div ref={quillRef} />
-                        </div>
-                        <button type="submit" value="save" onClick={onSubmit} className="save-book-writing">Save</button>
-                    </div>
-            <div className="right-container-temp" >
-                <div>
-                    <CharacterListContainer  bookId={bookId} /> 
+                    <button type="submit" value="save" onClick={onSubmit} className="save-book-writing">Save</button>
                 </div>
-                <div className="dictionary-container-mood">
-                    <DictionaryContainer />
+                <div className="right-container-temp" >
+                    <div>
+                        <CharacterListContainer  bookId={bookId} /> 
+                    </div>
+                    <div className="dictionary-container-mood">
+                        <DictionaryContainer />
+                    </div>
                 </div>
             </div>
-                    
-                </div>
         )
 }
 
